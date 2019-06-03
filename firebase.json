@@ -8,11 +8,15 @@
     ],
     "rewrites": [
       {
-        "source": "**",
+        "source": "/samples/**",
         "run" :{
           "serviceId": "rails",
           "region": "us-central1"
         }
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
       }
     ]
   }
