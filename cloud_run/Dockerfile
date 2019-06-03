@@ -1,6 +1,6 @@
 FROM ruby:2.6.3-alpine3.9
 
-RUN apk add --no-cache tzdata sqlite-dev && \
+RUN apk add --no-cache nodejs tzdata sqlite-dev && \
   cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
 RUN mkdir /app
